@@ -1,0 +1,27 @@
+_homePage:
+    pattern: /
+    defaults: { _controller: SzybkoBudujemyBundle:Default:homePage }
+
+_about:
+    pattern: /about
+    defaults: { _controller: SzybkoBudujemyBundle:Default:about }
+
+_gallery:
+    pattern: /gallery
+    defaults: {_controller: SzybkoBudujemyBundle:Default:gallery }
+
+_contact:
+    pattern: /contact
+    defaults: { _controller: SzybkoBudujemyBundle:Default:contact }
+
+_realizations:
+    pattern: /realizations
+    defaults: { _controller: SzybkoBudujemyBundle:Default:realizations }
+
+_addRealization:
+  pattern: /addRealization
+  defaults: { _controller: SzybkoBudujemyBundle:Admin:addRealization }
+
+_addPhoto:
+  pattern: /addPhoto
+  defaults: { _controller: SzybkoBudujemyBundle:Admin:addPhoto }

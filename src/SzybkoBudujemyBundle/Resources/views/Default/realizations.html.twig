@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div id="realizations">
+    {% for realization in realizations %}
+
+        <span>{{ realization.id }}). {{ realization.name }} - {{ realization.place }} </span>
+
+    {% endfor %}
+    </div>
+
+{% endblock %}

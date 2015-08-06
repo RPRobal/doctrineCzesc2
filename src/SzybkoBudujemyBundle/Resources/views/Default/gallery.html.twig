@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    
+    <div id="photos">
+        {% for photo in photos %}
+            <div id="photo">
+                 <span>
+                    {{ photo.name }}<br>
+                </span>
+                <img src="{{ asset(photo.getWebPath) }}"/><br>
+                <span>
+                    {{ photo.description }}<br>
+                </span>
+            </div>
+
+        {% endfor %}
+    </div>
+
+{% endblock %}

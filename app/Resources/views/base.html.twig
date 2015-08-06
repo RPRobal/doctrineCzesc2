@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}KTJ Budownictwo{% endblock %}</title>
+        {% block stylesheets %}
+
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+    <div id="site">
+    <div id="navigation">
+        <a href="{{ path('_homePage') }}">Strona główna</a>
+        <a href="{{ path('_about') }}">O firmie</a>
+        <a href="{{ path('_realizations') }}">Realizacje</a>
+        <a href="{{ path('_gallery') }}">Galeria</a>
+        <a href="{{ path('_contact') }}">Kontakt</a>
+    </div>
+    <div id="logo">
+
+    </div>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </div>
+    </body>
+</html>
